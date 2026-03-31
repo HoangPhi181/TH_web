@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import '../styles/homePage.css';
+import "../styles/HomePage.css";
 import { useNavigate } from "react-router-dom";
 import { FaShieldAlt, FaCheckCircle, FaHeadset, FaCreditCard } from "react-icons/fa";
 
@@ -67,9 +67,9 @@ function TableRow({ name, link, desc, leverage, spread, overnight, type }) {
 function Introduction() {
   return (
     <div className="Introduction_container">
-      {/* <div className ="image-box">
+      <div className ="image-box">
         <img src = "/item1.png"/>
-      </div> */}
+      </div>
 
       <h1>Giao dịch tài sản từ thị trường toàn cầu</h1>
       <h2>

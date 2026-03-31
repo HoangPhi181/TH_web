@@ -1,7 +1,7 @@
 
 .background-container{
     background-color: white;
-    color: black !important;
+    color: black;
 }
 /* -------------------logo/title-------------------------------- */
 header h1{
@@ -11,7 +11,7 @@ header h1{
 }
 
 header h2{
-    margin-top: -40px;
+    margin-top: -30px;
     margin-left: 12px;    
     font-weight: 500;
     font-size: 25px;
@@ -131,22 +131,35 @@ main h3 {
     background-color: #000;
     color:#fff;
     padding: 0;
-    margin-top: -100px;         
+             
 }
 
-/* .image-box {
-  width: 300px;
-  height: 200px;
-  overflow: hidden; 
-  border: 2px solid #ccc;
-  position: relative;
+.image-box {
+    margin-top: -100px;
+    overflow: hidden;
+    position: relative;
 }
 
 .image-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; 
-} */
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-box::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,1) 7%,      
+        rgba(0,0,0,0.3) 30%,
+        rgba(0,0,0,0.2) 50%,
+        rgba(255,255,255,0.15) 90%, 
+        rgba(255,255,255,0.25) 100% 
+    );
+}
 
 
 .Introduction_container h1{          
@@ -154,7 +167,7 @@ main h3 {
     font-size: 280%;
     text-align: center;         
     margin-bottom: 12px;
-    padding-top: 160px;
+    padding-top: 100px;
 }
 
 .Introduction_container h2{
